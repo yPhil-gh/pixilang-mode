@@ -1,6 +1,6 @@
 # pixilang-mode
 
-Emacs (https://www.gnu.org/software/emacs/) minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code
+GNU / Emacs (https://www.gnu.org/software/emacs/) minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code
 
 ## Installation
 
