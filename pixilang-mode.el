@@ -254,7 +254,7 @@
      ( ,(regexp-opt pixilang-functions 'words) . font-lock-function-name-face))))
 
 (define-derived-mode pixilang-mode c-mode
-  "Pixilang mode : A GNU / Emacs minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang)
+  "A GNU Emacs minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang)
 that uses c-mode as a basis / fallback."
   (setq font-lock-defaults pixilang-mode-font-lock-defaults))
 
