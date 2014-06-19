@@ -1,9 +1,8 @@
 ;;; pixilang-mode.el --- Minor mode for editing Pixilang code
 
-;; Copyright (C) 1985-1986, 1999-2013 Free Software Foundation, Inc.
-
+;; URL: https://github.com/xaccrocheur/pixilang-mode/
 ;; Maintainer: xaccrocheur@gmail.com
-;; Keywords: pixilang, languages
+;; Keywords: languages, pixilang
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -22,13 +21,11 @@
 
 ;;; Commentary:
 ;; Minor mode for editing Pixilang code (uses c-mode as a basis / fallback).
-
 ;; Pixilang — cross-platform programming language for graphics/sound applications and experiments.
 ;; http://www.warmplace.ru/soft/pixilang
 ;; Originally created by Alexander Zolotov (NightRadio) and Mik Razuvaev (Goglus) for non-programmers, demosceners and designers.
 
 ;;; Code:
-
 
 ;; define several class of keywords
 (setq pixilang-keywords '("if" "else" "else" "while" "break" "continue" "go" "goto" "halt" "include" "fn" "ret"))
@@ -188,23 +185,14 @@
   :group 'pixilang-mode-font-lock-faces)
 
 
-;; Variables
-(setq pixilang-local-variables-regexp "\\${?[#?]?\\([[:alpha:]_][[:alnum:]_]*\\|0\\)")
-
-(setq pixilang-variables-regexp "\\<\\([[:alnum:]_]+\\)\\(\\[.+\\]\\)?[ \t]*[-+*/%^]?=")
-
-
 (defvar pixilang-mode-font-lock-defaults
   `((
-     ;; stuff between "
-     ;; ("\"\\.\\*\\?" . font-lock-string-face)
-     ;; ; : , ; { } =>  @ $ = are all special elements
-     ;; (":\\|,\\|;\\|{\\|}\\|=>\\|@\\|$\\|=" . font-lock-keyword-face)
 
+;; Variables
      ("\\${?[#?]?\\([[:alpha:]_][[:alnum:]_]*\\|0\\)" . font-lock-variable-name-face)
      ("\\<\\([[:alnum:]_]+\\)\\(\\[.+\\]\\)?[ \t]*[-+*/%^]?=" . font-lock-variable-name-face)
 
-
+;; Colors
      ("ORANGE" . pixilang-mode-colors-orange)
      ("BLACK" . pixilang-mode-colors-black)
      ("WHITE" . pixilang-mode-colors-white)
@@ -213,6 +201,7 @@
      ("GREEN" . pixilang-mode-colors-green)
      ("BLUE" . pixilang-mode-colors-blue)
 
+;; Pixilang!
      ( ,(regexp-opt pixilang-keywords 'words) . font-lock-builtin-face)
      ( ,(regexp-opt pixilang-types 'words) . font-lock-type-face)
      ( ,(regexp-opt pixilang-sizes 'words) . font-lock-keyword-face)
@@ -237,17 +226,11 @@
      ( ,(regexp-opt pixilang-various 'words) . font-lock-builtin-face)
      ( ,(regexp-opt pixilang-built-in-global-variables 'words) . font-lock-variable-name-face)
      ( ,(regexp-opt pixilang-constants 'words) . font-lock-constant-face)
-     ( ,(regexp-opt pixilang-functions 'words) . font-lock-function-name-face)
-;     ( ,(regexp-opt pixilang-local-variables 'words) . font-lock-builtin-face)
-     )))
+     ( ,(regexp-opt pixilang-functions 'words) . font-lock-function-name-face))))
 
-;; define the mode
 (define-derived-mode pixilang-mode c-mode
   "Pixilang mode"
   "Major mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang)"
-
-  (setq font-lock-defaults pixilang-mode-font-lock-defaults)
-
-)
+  (setq font-lock-defaults pixilang-mode-font-lock-defaults))
 
 (provide 'pixilang-mode)
