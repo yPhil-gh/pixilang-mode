@@ -14,7 +14,7 @@ Clone it directly in your load-path :
 Make sure your load-path is recursive:
 
 
-### ~/.emacs
+(~/.emacs)
 ```lisp
 (let ((default-directory "~/.emacs.d/elisp/"))
   (normal-top-level-add-subdirs-to-load-path))
@@ -22,7 +22,7 @@ Make sure your load-path is recursive:
 
 And require it:
 
-### ~/.emacs
+(~/.emacs)
 ```lisp
 (require 'pixilang-mode nil 'noerror)
 ```
