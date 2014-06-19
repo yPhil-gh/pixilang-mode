@@ -1,12 +1,15 @@
-* pixilang-mode
+# pixilang-mode
 
 Emacs minor mode for editing Pixilang code
 
-** Installation
+## Installation
 
 Clone it directly in your load-path :
+
+```sh
 # cd ~/.emacs.d/elisp/
 # git clone https://github.com/xaccrocheur/pixilang-mode.git
+```
 
 Make sure your load-path is recursive:
 
@@ -23,7 +26,7 @@ And require it in your .emacs:
 
 See [[https://github.com/xaccrocheur/kituu][my dotfiles]] for an automatic implementation (that is, it is automatically installed on all my machines)
 
-** Usage
+## Usage
 
 ```lisp
 M-x pixilang-mode
