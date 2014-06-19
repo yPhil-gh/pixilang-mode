@@ -1,6 +1,6 @@
 # pixilang-mode
 
-Emacs minor mode for editing [http://www.warmplace.ru/soft/pixilang](Pixilang) code
+Emacs minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code
 
 ## Installation
 
