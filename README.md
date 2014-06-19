@@ -1,6 +1,6 @@
 # pixilang-mode
 
-GNU / Emacs (https://www.gnu.org/software/emacs/) minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code
+GNU Emacs (https://www.gnu.org/software/emacs/) minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code
 
 ## Installation
 
@@ -12,7 +12,6 @@ Clone it directly in your load-path :
 ```
 
 Make sure your load-path is recursive:
-
 
 (~/.emacs)
 ```lisp
