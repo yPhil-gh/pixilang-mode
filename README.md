@@ -24,7 +24,7 @@ And require it in your .emacs:
 (require 'pixilang-mode nil 'noerror)
 ```
 
-See [[https://github.com/xaccrocheur/kituu][my dotfiles]] for an automatic implementation (that is, it is automatically installed on all my machines)
+See [https://github.com/xaccrocheur/kituu](my dotfiles) for an automatic implementation (that is, it is automatically installed on all my machines)
 
 ## Usage
 
