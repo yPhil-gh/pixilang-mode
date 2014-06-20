@@ -167,6 +167,4 @@
   "A GNU Emacs minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code."
   (setq font-lock-defaults pixilang-mode-font-lock-defaults))
 
-(setq minor-mode-alist (cons '(pixilang-mode " ((()))") minor-mode-alist))
-
 (provide 'pixilang-mode)
