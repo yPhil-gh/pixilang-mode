@@ -179,7 +179,7 @@
      ("\\<\\([[:alnum:]_]+\\)\\(\\[.+\\]\\)?[ \t]*[-+*/%^]?=" . font-lock-variable-name-face)
 
 ;; Operators
-     ("%\\|/\\|div\\|*\\|+\\|-\\|>>\\|<<\\|==\\|!=\\|<\\|>\\| <= \\| >= \\||\\|^\\| & " . font-lock-warning-face)
+     ("%\\|/\\| div \\|*\\|+\\|-\\|>>\\|<<\\|==\\|!=\\|<\\|>\\| <= \\| >= \\||\\|^\\| & " . font-lock-warning-face)
 
 ;; Colors
      ("ORANGE" . pixilang-mode-colors-orange)
