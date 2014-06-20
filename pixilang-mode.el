@@ -57,102 +57,46 @@
 (setq pixilang-events '("at_rot_target" "at_target" "attach"))
 
 ;; Color Faces
-(defvar pixilang-mode-colors-orange 'pixilang-mode-colors-orange "Orange.")
-(defvar pixilang-mode-colors-black 'pixilang-mode-colors-black "Black.")
-(defvar pixilang-mode-colors-white 'pixilang-mode-colors-white "White.")
-(defvar pixilang-mode-colors-yellow 'pixilang-mode-colors-yellow "Yellow.")
-(defvar pixilang-mode-colors-red 'pixilang-mode-colors-red "Red.")
-(defvar pixilang-mode-colors-green 'pixilang-mode-colors-green "Green.")
-(defvar pixilang-mode-colors-blue 'pixilang-mode-colors-blue "Blue.")
+(defvar pixilang-mode-colors-orange 'pixilang-mode-colors-orange)
+(defvar pixilang-mode-colors-black 'pixilang-mode-colors-black)
+(defvar pixilang-mode-colors-white 'pixilang-mode-colors-white)
+(defvar pixilang-mode-colors-yellow 'pixilang-mode-colors-yellow)
+(defvar pixilang-mode-colors-red 'pixilang-mode-colors-red)
+(defvar pixilang-mode-colors-green 'pixilang-mode-colors-green)
+(defvar pixilang-mode-colors-blue 'pixilang-mode-colors-blue)
 
 (defface pixilang-mode-colors-orange
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "orange"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "orange"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "orange"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "orange"))
-    (t (:weight bold :background "DimGrey" :foreground "orange")))
+  `((t (:weight bold :background "DimGrey" :foreground "orange")))
   "Orange."
   :group 'pixilang-mode-font-lock-faces)
 
 (defface pixilang-mode-colors-black
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "black"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "black"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "black"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "black"))
-    (t (:weight bold :background "DimGrey" :foreground "black")))
+  `((t (:weight bold :background "DimGrey" :foreground "black")))
   "Black."
   :group 'pixilang-mode-font-lock-faces)
 
 (defface pixilang-mode-colors-white
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "white"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "white"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "white"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "white"))
-    (t (:weight bold :background "DimGrey" :foreground "white")))
+  `((t (:weight bold :background "DimGrey" :foreground "white")))
   "White."
   :group 'pixilang-mode-font-lock-faces)
 
 (defface pixilang-mode-colors-yellow
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "yellow"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "yellow"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "yellow"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "yellow"))
-    (t (:weight bold :background "DimGrey" :foreground "yellow")))
+  `((t (:weight bold :background "DimGrey" :foreground "yellow")))
   "Yellow."
   :group 'pixilang-mode-font-lock-faces)
 
 (defface pixilang-mode-colors-red
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "red"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "red"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "red"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "red"))
-    (t (:weight bold :background "DimGrey" :foreground "red")))
+  `((t (:weight bold :background "DimGrey" :foreground "red")))
   "Red."
   :group 'pixilang-mode-font-lock-faces)
 
 (defface pixilang-mode-colors-green
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "green"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "green"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "green"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "green"))
-    (t (:weight bold :background "DimGrey" :foreground "green")))
+  `((t (:weight bold :background "DimGrey" :foreground "green")))
   "Green."
   :group 'pixilang-mode-font-lock-faces)
 
 (defface pixilang-mode-colors-blue
-  `((((class color) (background dark))
-     (:weight bold :background "DimGrey" :foreground "blue"))
-    (((class color) (background light))
-     (:weight bold :background "DimGrey" :foreground "blue"))
-    (((type tty) (class color))
-     (:weight bold :background "DimGrey" :foreground "blue"))
-    (((type tty) (class mono))
-     (:weight bold :background "DimGrey" :foreground "blue"))
-    (t (:weight bold :background "DimGrey" :foreground "blue")))
+  `((t (:weight bold :background "DimGrey" :foreground "blue")))
   "Blue."
   :group 'pixilang-mode-font-lock-faces)
 
@@ -179,7 +123,7 @@
      ("\\<\\([[:alnum:]_]+\\)\\(\\[.+\\]\\)?[ \t]*[-+*/%^]?=" . font-lock-variable-name-face)
 
 ;; Operators
-     ("%\\|/\\| div \\|*\\|+\\|-\\|>>\\|<<\\|==\\|!=\\|<\\|>\\| <= \\| >= \\||\\|^\\| & " . font-lock-warning-face)
+     ("%\\|/\\| div \\|*\\|+\\|-\\|>>\\|<<\\| == \\|!=\\|<\\|>\\| <= \\| >= \\||\\|^\\| & " . font-lock-warning-face)
 
 ;; Colors
      ("ORANGE" . pixilang-mode-colors-orange)
@@ -219,8 +163,10 @@
      ( ,(regexp-opt pixilang-functions 'words) . font-lock-function-name-face))))
 
 (define-derived-mode pixilang-mode c-mode
-  "A GNU Emacs minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang)
-that uses c-mode as a basis / fallback."
+  "pixilang-mode"
+  "A GNU Emacs minor mode for editing Pixilang (http://www.warmplace.ru/soft/pixilang) code."
   (setq font-lock-defaults pixilang-mode-font-lock-defaults))
+
+(setq minor-mode-alist (cons '(pixilang-mode " ((()))") minor-mode-alist))
 
 (provide 'pixilang-mode)
