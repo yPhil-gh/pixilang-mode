@@ -65,42 +65,15 @@
 (defvar pixilang-mode-colors-green 'pixilang-mode-colors-green)
 (defvar pixilang-mode-colors-blue 'pixilang-mode-colors-blue)
 
-(defface pixilang-mode-colors-orange
-  `((t (:weight bold :background "DimGrey" :foreground "orange")))
-  "Orange."
-  :group 'pixilang-mode-font-lock-faces)
+(defface pixilang-mode-colors-orange `((t (:weight bold :background "DimGrey" :foreground "orange"))) "Orange.")
+(defface pixilang-mode-colors-black `((t (:weight bold :background "DimGrey" :foreground "black"))) "Black.")
+(defface pixilang-mode-colors-white `((t (:weight bold :background "DimGrey" :foreground "white"))) "White.")
+(defface pixilang-mode-colors-yellow `((t (:weight bold :background "DimGrey" :foreground "yellow"))) "Yellow.")
+(defface pixilang-mode-colors-red `((t (:weight bold :background "DimGrey" :foreground "red"))) "Red.")
+(defface pixilang-mode-colors-green `((t (:weight bold :background "DimGrey" :foreground "green"))) "Green.")
+(defface pixilang-mode-colors-blue `((t (:weight bold :background "DimGrey" :foreground "blue"))) "Blue.")
 
-(defface pixilang-mode-colors-black
-  `((t (:weight bold :background "DimGrey" :foreground "black")))
-  "Black."
-  :group 'pixilang-mode-font-lock-faces)
-
-(defface pixilang-mode-colors-white
-  `((t (:weight bold :background "DimGrey" :foreground "white")))
-  "White."
-  :group 'pixilang-mode-font-lock-faces)
-
-(defface pixilang-mode-colors-yellow
-  `((t (:weight bold :background "DimGrey" :foreground "yellow")))
-  "Yellow."
-  :group 'pixilang-mode-font-lock-faces)
-
-(defface pixilang-mode-colors-red
-  `((t (:weight bold :background "DimGrey" :foreground "red")))
-  "Red."
-  :group 'pixilang-mode-font-lock-faces)
-
-(defface pixilang-mode-colors-green
-  `((t (:weight bold :background "DimGrey" :foreground "green")))
-  "Green."
-  :group 'pixilang-mode-font-lock-faces)
-
-(defface pixilang-mode-colors-blue
-  `((t (:weight bold :background "DimGrey" :foreground "blue")))
-  "Blue."
-  :group 'pixilang-mode-font-lock-faces)
-
-;; Available faces:
+;; Available font-lock faces:
 ;; font-lock-comment-face
 ;; font-lock-comment-delimiter-face
 ;; font-lock-string-face
